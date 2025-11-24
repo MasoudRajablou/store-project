@@ -6,15 +6,18 @@ import "./global.css";
 
 import ProductProvider from "./context/ProductProvider.jsx";
 import CartProvider from "./context/CartProvider.jsx";
+import Layout from "./layout/Layout.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <BrowserRouter>
-      <ProductProvider>
-        <CartProvider>
+  // <StrictMode>
+  <BrowserRouter>
+    <ProductProvider>
+      <CartProvider>
+        <Layout>
           <App />
-        </CartProvider>
-      </ProductProvider>
-    </BrowserRouter>
-  </StrictMode>
+        </Layout>
+      </CartProvider>
+    </ProductProvider>
+  </BrowserRouter>
+  // </StrictMode>
 );

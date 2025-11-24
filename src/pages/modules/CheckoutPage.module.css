@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  min-height: 1000px;
+}
+
+.container h1 {
+    width: 100%;
+  text-align: center;
+}
+
+.products {
+  width: 100%;
+}
